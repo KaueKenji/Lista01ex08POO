@@ -7,6 +7,7 @@ public class Main {
 
     do{
       p.fechar();
+      System.out.println("A porta foi fechada ");
     System.out.println("Deseja abrir a porta?");
     resp =Boolean.parseBoolean(System.console().readLine());
     if(resp){
@@ -14,6 +15,7 @@ public class Main {
     }
     }while(resp);
     p.fechar();
+
     
     System.out.println("A porta foi fechada \nNúmeros de vezes que a porta foi aberta: " + p.numAberturas);
     
